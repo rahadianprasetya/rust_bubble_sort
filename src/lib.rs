@@ -3,7 +3,6 @@ use std::fmt::Debug;
 // O(n^2) BIG O is n square
 pub fn bubble_short<T: PartialOrd + Debug>(v: &mut [T]) {
     for p in 0..v.len() {
-        println!("{:?}", v);
         let mut sorted = true;
         for i in 0..(v.len() - 1) - p {
             if v[i] > v[i + 1] {
@@ -11,6 +10,7 @@ pub fn bubble_short<T: PartialOrd + Debug>(v: &mut [T]) {
                 sorted = false;
             }
         }
+        println!("{:?}", v);
         if sorted {
             return;
         }
