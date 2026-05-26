@@ -173,6 +173,5 @@ mod tests {
         threaded_quick_sort(&mut v);
         println!("{:?}", v);
         assert_eq!(v, vec![1, 3, 4, 6, 8, 11, 13]);
-        panic!();
     }
 }
